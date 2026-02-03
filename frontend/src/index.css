@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HotelBook Luxury Hotel Design System */
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 20%;
+
+    /* Primary - Teal Green */
+    --primary: 163 73% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 163 73% 28%;
+    --primary-light: 163 40% 95%;
+
+    /* Secondary - Gold/Amber */
+    --secondary: 40 89% 60%;
+    --secondary-foreground: 220 20% 15%;
+
+    /* Accent - Mint */
+    --accent: 160 40% 94%;
+    --accent-foreground: 163 73% 35%;
+
+    /* Muted */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 10% 46%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    /* Border */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 163 73% 35%;
+
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Footer Dark */
+    --footer: 230 25% 12%;
+    --footer-foreground: 220 14% 75%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar (keeping defaults) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 163 73% 35%;
+  }
+
+  .dark {
+    --background: 230 25% 12%;
+    --foreground: 0 0% 95%;
+    --card: 230 25% 15%;
+    --card-foreground: 0 0% 95%;
+    --popover: 230 25% 15%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 163 73% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 89% 60%;
+    --secondary-foreground: 220 20% 15%;
+    --muted: 230 20% 20%;
+    --muted-foreground: 220 14% 65%;
+    --accent: 163 30% 20%;
+    --accent-foreground: 163 73% 60%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 230 20% 25%;
+    --input: 230 20% 25%;
+    --ring: 163 73% 45%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply inline-block px-4 py-1.5 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-widest rounded;
+  }
+
+  .section-label-white {
+    @apply inline-block px-4 py-1.5 bg-background text-primary text-xs font-semibold uppercase tracking-widest rounded;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-foreground leading-tight;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded hover:bg-primary-dark transition-colors;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-secondary text-secondary-foreground font-semibold rounded hover:opacity-90 transition-colors;
+  }
+
+  .progress-bar {
+    @apply h-1.5 bg-muted rounded-full overflow-hidden;
+  }
+
+  .progress-bar-fill {
+    @apply h-full bg-primary rounded-full transition-all duration-1000;
+  }
+
+  .stat-card {
+    @apply text-center text-primary-foreground;
+  }
+
+  .stat-number {
+    @apply text-5xl md:text-6xl font-bold;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .stat-label {
+    @apply text-sm md:text-base opacity-90 mt-2;
+  }
+
+  .staff-card {
+    @apply relative;
+  }
+
+  .staff-image-container {
+    @apply relative overflow-hidden rounded-lg;
+  }
+
+  .staff-badge {
+    @apply absolute -bottom-4 right-4 w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground shadow-lg;
+  }
+
+  .footer-heading {
+    @apply text-lg font-semibold mb-4;
+  }
+
+  .footer-link {
+    @apply text-sm text-footer-foreground hover:text-primary-foreground transition-colors;
+  }
+
+  .top-bar {
+    @apply bg-primary text-primary-foreground py-2 text-sm;
+  }
+
+  .nav-link {
+    @apply text-foreground hover:text-primary transition-colors font-medium text-sm flex items-center gap-1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

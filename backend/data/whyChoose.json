@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "name": "Services",
+    "percentage": 88,
+    "order": 1,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "Chef Master",
+    "percentage": 80,
+    "order": 2,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "Design",
+    "percentage": 76,
+    "order": 3,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "Receptionist",
+    "percentage": 92,
+    "order": 4,
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
+

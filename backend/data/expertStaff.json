@@ -1,0 +1,95 @@
+[
+  {
+    "id": "1",
+    "name": "John Doe",
+    "position": "Senior Full Stack Developer",
+    "bio": "Experienced developer specializing in MERN stack and cloud architecture. Passionate about clean code and scalable systems.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 7,
+    "email": "john.doe@example.com",
+    "phone": "+1234567890",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "twitter": "https://twitter.com/johndoe",
+      "github": "https://github.com/johndoe"
+    },
+    "specialization": ["React", "Node.js", "MongoDB", "AWS"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "name": "Jane Smith",
+    "position": "UX/UI Designer",
+    "bio": "Award-winning designer with a focus on user-centered design and accessibility. 5+ years creating intuitive interfaces.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 5,
+    "email": "jane.smith@example.com",
+    "phone": "+1987654321",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/janesmith",
+      "twitter": ""
+    },
+    "specialization": ["Figma", "User Research", "Prototyping", "Design Systems"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "name": "Michael Chen",
+    "position": "DevOps Engineer",
+    "bio": "Infrastructure and CI/CD expert. Ensures high availability and smooth deployments for production systems.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 6,
+    "email": "michael.chen@example.com",
+    "phone": "+1555123456",
+    "specialization": ["Docker", "Kubernetes", "AWS", "Terraform"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "4",
+    "name": "Sarah Williams",
+    "position": "HR Manager",
+    "bio": "Dedicated to building inclusive teams and fostering a positive workplace culture. 10 years in people operations.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 10,
+    "email": "sarah.williams@example.com",
+    "phone": "+1555987654",
+    "specialization": ["Recruitment", "Employee Relations", "Training", "Compliance"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "5",
+    "name": "David Brown",
+    "position": "Sales Lead",
+    "bio": "Results-driven sales professional with expertise in B2B and enterprise deals. Consistently exceeds targets.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 4,
+    "email": "david.brown@example.com",
+    "phone": "+1555333444",
+    "specialization": ["Enterprise Sales", "Negotiation", "CRM", "Client Relations"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "6",
+    "name": "Emily Davis",
+    "position": "Backend Developer",
+    "bio": "Specializes in high-performance APIs and database design. Loves solving complex backend challenges.",
+    "image": "https://via.placeholder.com/300",
+    "experience": 3,
+    "email": "emily.davis@example.com",
+    "phone": "+1555666777",
+    "specialization": ["Node.js", "PostgreSQL", "Redis", "REST APIs"],
+    "isActive": true,
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  }
+]
