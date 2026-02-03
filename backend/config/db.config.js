@@ -12,14 +12,25 @@ const connectDB = async () => {
     // mongoose 6+ uses these by default; kept for older versions if needed
   };
 
+  // If no MongoDB URI is configured, clearly log that we will use local JSON files
+  if (!process.env.MONGODB_URI) {
+    console.warn(
+      '[DB] No MONGODB_URI registered. Using local JSON files (no MongoDB connection).'
+    );
+  }
+
   try {
     await mongoose.connect(uri, options);
     isDBConnected = true;
-    console.log(`[DB] MongoDB connected: ${mongoose.connection.host}`);
+    console.log(
+      `[DB] Connected to MongoDB → host: ${mongoose.connection.host}, db: ${mongoose.connection.name}`
+    );
     return true;
   } catch (err) {
     isDBConnected = false;
-    console.warn('[DB] MongoDB unavailable - running in fallback (JSON file) mode.');
+    console.warn(
+      '[DB] MongoDB unavailable - running in fallback (local JSON file) mode. Data will be read from backend/data/*.json instead of the database.'
+    );
     console.warn('[DB] Error:', err.message);
     return false;
   }
